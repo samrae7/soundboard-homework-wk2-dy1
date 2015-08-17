@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Who Soundboard</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src='soundmanager/script/soundmanager2.js'></script>
+  
+
+  <script>
+soundManager.setup({
+  url: 'soundmanager/swf/',
+  flashVersion: 9, // optional: shiny features (default = 8)
+  // optional: ignore Flash where possible, use 100% HTML5 mode
+  // preferFlash: false,
+  onready: function() {
+    // Ready to use; soundManager.createSound() etc. can now be called.
+  }
+});
+</script>
+</head>
+<body>
+  <header><h1>Doctor Who soundboard</h1></header>
+  <div class='container cf'>
+      <div class='cell' >
+        <img src='images/ninth-doctor.png' id='img1'>
+        </div>
+      <div class='cell' >
+        <img src='images/tenth-doctor-mid.png' id='img2'></div>
+      <div class='cell' >
+        <img src='images/eleventh-doctor.png' id='img3'></div>
+      <div class='cell newRow'>
+        <img src='images/twelth-doctor.png' id='img4'>
+      </div>
+      <div class="cell">
+        <img src='images/tardis.png' id='img5'>
+      </div>
+      <div class='cell' >
+        <img src='images/rose-tyler1.png' id='img6'>
+      </div>
+
+      <div class="cell newRow">
+        <img src='images/daleks1.png' id='img7'>
+      </div>
+      <div class='cell'>
+        <img src='images/dh_logo.png' id='img8'>
+      </div>
+      <div class='cell'>
+        <img src='images/strax.jpeg' id='img9'>
+      </div>
+  </div>
+</body>
+  <script type="text/javascript" src='soundboard.js'></script>
+</html>
